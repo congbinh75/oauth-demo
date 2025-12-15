@@ -1,0 +1,16 @@
+meta {
+  name: public
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://{{baseURL}}:{{port}}/api/test/public
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
